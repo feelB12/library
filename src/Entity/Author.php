@@ -20,7 +20,7 @@ class Author
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $firstname;
+    private $firstName;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -30,21 +30,21 @@ class Author
     /**
      * @ORM\Column(type="date")
      */
-    private $denthDate;
+    private $deathDate;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getFirstname(): ?string
+    public function getFirstName(): ?string
     {
-        return $this->firstname;
+        return $this->firstName;
     }
 
-    public function setFirstname(string $firstname): self
+    public function setFirstName(string $firstName): self
     {
-        $this->firstname = $firstname;
+        $this->firstName = $firstName;
 
         return $this;
     }
@@ -61,14 +61,14 @@ class Author
         return $this;
     }
 
-    public function getDenthDate(): ?\DateTimeInterface
+    public function getDeathDate(): ?\DateTimeInterface
     {
-        return $this->denthDate;
+        return $this->deathDate;
     }
 
-    public function setDenthDate(\DateTimeInterface $denthDate): self
+    public function setDeathDate(\DateTimeInterface $deathDate): self
     {
-        $this->denthDate = $denthDate;
+        $this->deathDate = $deathDate;
 
         return $this;
     }
